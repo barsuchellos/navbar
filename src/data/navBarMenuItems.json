@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "text": "Manifesto",
+        "link": "/Manifesto"
+    },
+    {
+        "id": "2",
+        "text": "How it works",
+        "link": "/HowItWorks"
+    },
+    {
+        "id": "3",
+        "text": "Pricing",
+        "link": "/Pricing"
+    },
+    {
+        "id": "4",
+        "text": "Country explorer",
+        "link": "/CountryExplorer"
+    }
+]

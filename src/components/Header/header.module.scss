@@ -1,0 +1,16 @@
+
+.header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    grid-auto-rows: minmax(96px, auto);
+}
+
+.buttonBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+}

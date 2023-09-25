@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/reset.scss'
+import './styles/inter.scss'
+
+import Header from './components/Header/Header';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar.jsx';
+
+import Manifesto from './pages/ManifestoPage/ManifestoPage.jsx'
+import HowItWorks from './pages/HowItWorksPage/HowItWorksPage.jsx'
+import Pricing from './pages/PricingPage/PricingPage.jsx'
+import CountryExplorer from './pages/CountryExplorerPage/CountryExplorePage.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path='/Manifesto' element={<Manifesto/>} />
+        <Route path='/HowItWorks' element={<HowItWorks/>} />
+        <Route path='/Pricing' element={<Pricing/>} />
+        <Route path='/CountryExplorer' element={<CountryExplorer/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

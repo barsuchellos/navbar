@@ -1,5 +1,10 @@
 
 .header {
+
+    @media (max-width: 760px) {
+        grid-template-columns: none;
+        height: 100vh;
+    }
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -7,10 +12,13 @@
     justify-items: center;
     align-items: center;
     grid-auto-rows: minmax(96px, auto);
+    border-bottom: 2px solid #3A4F39;
+    margin-bottom: 20px;
 }
 
 .buttonBox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
+    
 }

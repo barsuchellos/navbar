@@ -1,4 +1,15 @@
-.navLinks {
+.navLinks {    
+    @media (max-width: 768px) {
+        grid-template-columns: none;
+        font-size: 30px;
+        grid-gap: 30px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 25px;
+    }
+
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;

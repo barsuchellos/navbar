@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/Manifesto' element={<Manifesto/>} />
         <Route path='/HowItWorks' element={<HowItWorks/>} />
-        <Route path='/Pricing' element={<Pricing/>} />
+        <Route path='/posts' element={<Pricing/>} />
         <Route path='/CountryExplorer' element={<CountryExplorer/>} />
       </Routes>
     </BrowserRouter>

@@ -3,6 +3,7 @@
     @media (min-width: 1301px) {
         grid-template-columns: 400px 400px 400px;
     }
+
     @media (max-width: 1300px) {
         grid-template-columns: 400px 400px;
     }
@@ -10,6 +11,7 @@
     @media (max-width: 850px) {
         grid-template-columns: 300px;
     }
+
     display: grid;
     justify-content: center;
     align-items: center;
@@ -28,5 +30,10 @@
     color: #fff;
     text-align: center;
     font-family: 'Inter', sans-serif;
+    list-style-type: none;
 
+}
+
+.link {
+    color: #fff;
 }

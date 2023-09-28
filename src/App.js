@@ -9,6 +9,7 @@ import Manifesto from './pages/ManifestoPage/ManifestoPage.jsx'
 import HowItWorks from './pages/HowItWorksPage/HowItWorksPage.jsx'
 import Pricing from './pages/PricingPage/PricingPage.jsx'
 import CountryExplorer from './pages/CountryExplorerPage/CountryExplorePage.jsx'
+import SinglePostPage from './pages/SinglePostPage/SinglePostPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Manifesto' element={<Manifesto/>} />
         <Route path='/HowItWorks' element={<HowItWorks/>} />
         <Route path='/posts' element={<Pricing/>} />
+        <Route path='/posts/:id' element={<SinglePostPage/>} />
         <Route path='/CountryExplorer' element={<CountryExplorer/>} />
       </Routes>
     </BrowserRouter>

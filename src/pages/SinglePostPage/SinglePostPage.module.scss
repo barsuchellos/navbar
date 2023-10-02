@@ -7,3 +7,13 @@
     grid-gap: 50px;
     padding: 20px;
 }
+
+.BackButton {
+    padding: 15px;
+    width: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    right: 15%;
+}

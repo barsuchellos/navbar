@@ -1,11 +1,17 @@
 .container {
     display: grid;
+    grid-template-columns: 100px 300px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding: 20px;
+
     background-color: #3A4F39;
     color: #fff;
-    justify-content: space-around;
-    align-items: center;
-    grid-gap: 50px;
-    padding: 20px;
+
+    font-family: 'Inter', sans-serif;
 }
 
 .BackButton {
@@ -14,6 +20,8 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    position: relative;
-    right: 15%;
+    right: 20%;
+    cursor: pointer;
+
+
 }

@@ -1,7 +1,7 @@
 
 .header {
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
         grid-template-columns: none;
         height: 100vh;
     }
@@ -14,6 +14,8 @@
     grid-auto-rows: minmax(96px, auto);
     border-bottom: 2px solid #3A4F39;
     margin-bottom: 20px;
+
+    max-width: 1700px;
 }
 
 .buttonBox {

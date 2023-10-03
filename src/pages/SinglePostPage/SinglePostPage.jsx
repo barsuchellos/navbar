@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { getPostById } from '../../api/posts';
 import { useState, useEffect } from 'react';
 
@@ -9,7 +9,9 @@ const SinglePostPage = () => {
     const [post, setPost] = useState({})
     const params = useParams()
 
+    const [search, setSearch] = useSearchParams();
 
+    console.log('search', search);
     const navigate = useNavigate();
 
     const Back = (event) => {
@@ -31,9 +33,6 @@ const SinglePostPage = () => {
         fetchPost()
     }, [])
 
-
-
-    console.log(post);
     return (
         <div className={styles.container}>
             <button className={styles.BackButton} onClick={() => Back(-1)}>Back</button>
